@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+form div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+form {
+    width: 500px;
+    padding: 44px;
+    border-radius: 9px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-container {
+    width: 200px;
+}
+
+.agrees {
+    display: flex;
+    flex-direction: column;
+}
+
+.agrees-container {
+    display: flex;
+}
+
+input:optional {
+    background-color: yellow;
+    border: 3px solid lime;
+}
+
+label {
+    font-weight: bold;
+}
+
+input:required {
+    background-color: #deccde;
+    border: 3px solid purple;
+}
+
+select {
+    background-color: #7676ff;
+    border: 3px solid #2e2eee;
+    height: 30px;
+    width: 73%;
+}
+
+textarea {
+    border: 3px solid green;
+    background-color: #55f155;
+    height: 70px;
+    width: 48%;
+}
+
+input[type="reset"] {
+    border: 2px solid green;
+    background-color: red;
+}
+
+input[type="submit"] {
+    border: 2px solid green;
+    background-color: lightgreen;
+}
+
+#city {
+    width: 48%;
+}
+
+.sex {
+    display: flex;
+    gap: 9px;
+    width: 48%;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task01</title>
+    <link rel="stylesheet" href="style1.css"/>
+</head>
+<body>
+<form>
+    <div>
+        <label for="E-mail">E-mail:</label>
+        <input id="E-mail" name="E-mail" placeholder="Your E-mail" type="email">
+    </div>
+    <div>
+        <label for="password">Пароль:</label>
+        <input id="password" name="password" placeholder="Password" required="required" type="password">
+    </div>
+    <div>
+        <label for="password2">Повторіть пароль:</label>
+        <input id="password2" name="password2" placeholder="Repeat password" required="required"
+               type="password">
+    </div>
+    <div>
+        <label for="name">Ім'я:</label>
+        <input id="name" name="name" placeholder="Name" type="text">
+    </div>
+    <div>
+        <label for="surname">Прізвище:</label>
+        <input id="surname" name="surname" placeholder="Surname" type="text">
+    </div>
+    <div>
+        <label>Стать:</label>
+        <span class="sex">
+            <input id="male" name="gender" type="radio">чоловіча
+            <input id="female" name="gender" type="radio">жіноча
+        </span>
+    </div>
+    <div>
+        <label for="city">Місто:</label>
+        <select id="city" name="city">
+            <option value="ZT">Житомир</option>
+            <option value="LV">Львів</option>
+            <option value="CH">Черкаси</option>
+            <option value="KH">Хмельницький</option>
+            <option value="PO">Полтава</option>
+        </select>
+    </div>
+    <div>
+        <label for="info">Про себе:</label>
+        <textarea id="info" name="info"></textarea>
+    </div>
+    <div class="agrees-container">
+        <label>Погодження:</label>
+        <div class="agrees">
+            <span>
+            <input id="agree" name="adjustment[]" type="checkbox">Прочитав правила користування
+            </span>
+            <span>
+            <input id="agree2" name="adjustment[]" type="checkbox">Погоджуюсь з правилами сайту
+            </span>
+        </div>
+    </div>
+
+    <input type="submit" value="Зареєструватися">
+    <input type="reset" value="Reset">
+</form>
+</body>
+</html>
