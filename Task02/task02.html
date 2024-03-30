@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task02</title>
+    <link rel="stylesheet" href="style02.css"/>
+</head>
+<body>
+<form>
+    <div>
+
+        <label for="name">Ім'я:</label>
+        <input autocomplete="off" id="name" name="name" placeholder="Введіть ваше ім'я" required="required" type="text">
+    </div>
+    <div>
+        <label for="email">Пошта:</label>
+        <input autocomplete="off" id="email" name="email" placeholder="Введіть вашу електронну пошту"
+               required="required"
+               type="email">
+    </div>
+    <div>
+        <label for="password">Пароль:</label>
+        <input autocomplete="off" id="password"
+               name="password" placeholder="Введіть ваш пароль" required="required" type="password">
+    </div>
+    <div>
+        <label for="age">Вік:</label>
+        <input autocomplete="off" id="age" min="0"
+               name="age" placeholder="Введіть ваш вік" required="required" type="number">
+    </div>
+    <div>
+        <div>
+
+            <input id="agree" name="adjustment[]" required="required" type="checkbox">
+            <label for="agree">Погоджуюсь з правилами сайту</label>
+        </div>
+    </div>
+    <div>
+        <label for="countries[]">Оберіть країну:</label>
+        <select id="countries[]" name="countries[]" required="required">
+            <option disabled="disabled" selected="selected" value="">Виберіть країну</option>
+            <option value="PL">Польща</option>
+            <option value="UK">Україна</option>
+            <option value="GB">Велика Британія</option>
+        </select>
+    </div>
+    <div class="submit">
+
+        <input type="submit" value="Зареєструватися">
+    </div>
+
+</form>
+</body>
+</html>

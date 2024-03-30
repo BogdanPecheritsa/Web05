@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 300px;
+    border: 1px solid #7070ff;
+    padding: 24px;
+    border-radius: 9px;
+    background-color: #eee;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit {
+    align-self: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    height: 20px;
+    border-radius: 4px;
+}
+
+input:required:valid,
+select:required:valid {
+    border: 1px solid green;
+}
+
+input:required:invalid,
+select:invalid {
+    border: 1px solid red;
+}
+
+input:not([type="submit"]):not(:placeholder-shown) {
+    background-color: #7070ff;
+}
+
+::placeholder {
+    color: darkblue;
+}
