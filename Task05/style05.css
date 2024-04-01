@@ -1,0 +1,52 @@
+html{
+    --color: #ff767c;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+div {
+    background-image: url("../images/pespatron.png");
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    background-size: 100px auto;
+    margin-top: 2px;
+}
+
+.first {
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.second {
+    background-color: var(--color);
+    background-position: right;
+    background-repeat: repeat-y;
+}
+
+.third {
+    background-color: var(--color);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.fourth {
+    background-color: var(--color);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.fifth {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sixth {
+    background-color: var(--color);
+    background-repeat: space;
+    background-position: center;
+}
