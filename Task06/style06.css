@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+}
+
+div {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+
+}
+
+.gradient1 {
+    background: radial-gradient(circle, #1d4778, #e095cb, #3c7b01, #ffe123);
+}
+
+.gradient2 {
+    background: radial-gradient(circle, #6fe6e4 0%, #542b59 84%);
+}
+
+.gradient3 {
+    background: linear-gradient(to bottom right, #7b42b2, #7b42b2 33%, #68ff78 33%, #68ff78 66%, #005c8c 66%);
+}
+
+.gradient4 {
+    background: linear-gradient(to top right, #fc4f40, #ea51b9, #140b82, #20cbd8, #68ff78, #efe763);
+}
